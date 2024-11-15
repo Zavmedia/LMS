@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: #0a0a1a;
+    overflow-x: hidden;
+}
+
+.courses-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Background Animation */
+.background-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(10, 10, 50, 0.8), rgba(0, 0, 0, 0.9));
+    animation: shimmer 10s linear infinite;
+}
+
+/* Course List */
+.course-list {
+    width: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.course-list h2 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-item {
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.course-item:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.course-title {
+    position: relative;
+    z-index: 1;
+}
+
+.course-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 255, 255, 0.5);
+    filter: blur(10px);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.course-item:hover .course-glow {
+    opacity: 1;
+}
+
+/* Course Details */
+.course-details {
+    width: 70%;
+    padding: 40px;
+    animation: fadeInUp 1s ease;
+    overflow-y: auto;
+}
+
+.course-detail {
+    display: none;
+}
+
+.course-detail h2 {
+    font-size: 28px;
+    color: #00e5ff;
+    margin-bottom: 20px;
+}
+
+.course-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.action-links {
+    margin-top: 20px;
+}
+
+.action-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.action-links a:hover {
+    background: #00e5ff;
+    transform: scale(1.1);
+}
+
+/* Active State */
+.course-detail.active {
+    display: block;
+}
+
+/* Animations */
+@keyframes shimmer {
+    0% { background-position: -1000px; }
+    100% { background-position: 1000px; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

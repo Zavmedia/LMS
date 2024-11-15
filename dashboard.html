@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Futuristic LMS</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="animation-bg"></div>
+
+        <!-- Welcome Section with Avatar -->
+        <div class="avatar-container">
+            <img src="assets/images/teacher-avatar.png" alt="Teacher Avatar">
+            <h2>Welcome to Futuristic LMS</h2>
+        </div>
+
+        <!-- Horizontal Menu Section -->
+        <div class="menu">
+            <div class="menu-item" onclick="navigateTo('courses')">Courses</div>
+            <div class="menu-item" onclick="navigateTo('community')">Community</div>
+            <div class="menu-item" onclick="navigateTo('about')">About Us</div>
+        </div>
+
+        <!-- Awareness Section -->
+        <div class="info-section">
+            <h3>About Our LMS</h3>
+            <p>
+                Discover a revolutionary way to learn with our LMS! Explore our courses, take part in quizzes, 
+                and interact with like-minded peers through our community feature. Join us and elevate your learning experience.
+            </p>
+            <img src="assets/images/space-photo.jpg" alt="Space Photo">
+        </div>
+
+        <!-- Featured Course Section -->
+        <div class="featured-course">
+            <h3>Featured Course</h3>
+            <div class="course-card" onclick="navigateTo('courses')">
+                <div class="course-image" style="background-image: url('assets/images/course-image.jpg');">
+                    <div class="course-button">View Courses</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about-us">
+            <h3>About Us</h3>
+            <p>
+                Futuristic LMS is your gateway to interactive learning experiences tailored for success.
+                Our platform empowers students with tools for self-paced education, collaborative communities, 
+                and expert guidance. Together, we build a smarter future.
+            </p>
+            <p>Follow us on:</p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+            <p>© 2024 Futuristic LMS. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

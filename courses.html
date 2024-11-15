@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Futuristic LMS</title>
+    <link rel="stylesheet" href="styles/courses.css">
+</head>
+<body>
+    <div class="courses-container">
+        <!-- Animated Background -->
+        <div class="background-animation"></div>
+
+        <!-- Course List -->
+        <div class="course-list">
+            <h2>Available Courses</h2>
+            <ul>
+                <li class="course-item" onclick="showDetails('course1')">
+                    <span class="course-title">Introduction to AI</span>
+                    <span class="course-glow"></span>
+                </li>
+                <li class="course-item" onclick="showDetails('course2')">
+                    <span class="course-title">Data Structures</span>
+                    <span class="course-glow"></span>
+                </li>
+                <li class="course-item" onclick="showDetails('course3')">
+                    <span class="course-title">Web Development</span>
+                    <span class="course-glow"></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Course Details -->
+        <div class="course-details">
+            <div id="course1" class="course-detail">
+                <h2>Introduction to AI</h2>
+                <p>
+                    Dive into the world of Artificial Intelligence, exploring fundamental concepts like machine learning, neural networks, and AI ethics.
+                </p>
+                <div class="action-links">
+                    <a href="#">View Notes</a>
+                    <a href="#">Watch Videos</a>
+                    <a href="#">Take Quiz</a>
+                </div>
+            </div>
+            <div id="course2" class="course-detail hidden">
+                <h2>Data Structures</h2>
+                <p>
+                    Master data structures like arrays, linked lists, stacks, queues, and trees, with hands-on examples and coding exercises.
+                </p>
+                <div class="action-links">
+                    <a href="#">View Notes</a>
+                    <a href="#">Watch Videos</a>
+                    <a href="#">Take Quiz</a>
+                </div>
+            </div>
+            <div id="course3" class="course-detail hidden">
+                <h2>Web Development</h2>
+                <p>
+                    Learn to build modern, responsive websites using HTML, CSS, JavaScript, and frameworks like React and Angular.
+                </p>
+                <div class="action-links">
+                    <a href="#">View Notes</a>
+                    <a href="#">Watch Videos</a>
+                    <a href="#">Take Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/courses.js"></script>
+</body>
+</html>
